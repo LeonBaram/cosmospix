@@ -1,17 +1,5 @@
-// Canva color palette: "Pasture of Dreams"
-// https://www.canva.com/colors/color-palettes/pasture-of-dreams/
+@import "./global";
+@import "./typography";
 
-$mauve: #d3b1c2;
-$lavender: #c197d2;
-$black: #211522;
-$orchid: #613659;
-
-body {
-  background: $black;
-}
-
-* {
-  font-family: "Ubuntu";
-  color: white;
-  text-align: center;
-}
+// Component styles
+@import "./ImageDisplay";

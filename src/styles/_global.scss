@@ -1,0 +1,19 @@
+// Canva color palette: "Pasture of Dreams"
+// https://www.canva.com/colors/color-palettes/pasture-of-dreams/
+$mauve: #d3b1c2;
+$lavender: #c197d2;
+$black: #211522;
+$orchid: #613659;
+
+body {
+  background: $black;
+}
+
+.img-container {
+  border-radius: 10px;
+  overflow: hidden;
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+}
