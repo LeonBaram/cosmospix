@@ -3,7 +3,7 @@
  *
  * Documentation Source: https://github.com/nasa/apod-api#docs.
  */
-export interface ApodData {
+export interface ApodResponse {
   /** A dictionary describing the image_set or planet that the response illustrates, completely determined by the structured endpoint. */
   resource?: Record<string, string>;
 

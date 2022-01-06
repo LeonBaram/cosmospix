@@ -1,4 +1,4 @@
-import { ApodResponseObject } from "../models";
+import { ApodResponse } from "../models";
 
 const apiBaseURL = "https://api.nasa.gov/planetary/apod";
 
@@ -9,7 +9,7 @@ const params = new URLSearchParams({
 
 const apiURL = `${apiBaseURL}?${params}`;
 
-export async function fetchImages(): Promise<ApodData> {
+export async function fetchImages(): Promise<ApodResponse> {
   const response = await fetch(apiURL);
   return response.json();
 }

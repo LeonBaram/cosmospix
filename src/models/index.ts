@@ -1,1 +1,1 @@
-export * from "./ApodData";
+export * from "./ApodResponse";
