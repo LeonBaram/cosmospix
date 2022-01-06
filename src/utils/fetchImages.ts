@@ -9,7 +9,7 @@ const params: ApodParams = {
 
 const apiURL = `${apiBaseURL}?${new URLSearchParams(params)}`;
 
-export async function fetchImages(): Promise<ApodResponse> {
+export async function fetchImages(): Promise<ApodResponse[]> {
   const response = await fetch(apiURL);
   return response.json();
 }
