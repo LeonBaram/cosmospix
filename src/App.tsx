@@ -7,18 +7,16 @@ export const App: React.FC = () => {
   const [images, setImages] = useState<ApodData[]>();
 
   useEffect(() => {
-    (async () => {
-      const apodData = await fetchImages(20);
-      setImages(apodData.filter(validateImages));
-      console.log(images);
-    })();
+    fetchImages(20).then((apodData) =>
+      setImages(apodData.filter(validateImages).slice(0, 6))
+    );
   }, []);
   return (
-    <>
+    <div className="full-bleed">
       <h1>Cosmos Pix</h1>
       <p>test</p>
-      <main className="image-display">
-        <ul>
+      <main>
+        <ul className="images">
           {images ? (
             images.map((image) => (
               <ImageDisplay image={image} key={image.title} />
@@ -28,6 +26,6 @@ export const App: React.FC = () => {
           )}
         </ul>
       </main>
-    </>
+    </div>
   );
 };

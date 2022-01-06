@@ -9,6 +9,16 @@ body {
   background: $black;
 }
 
+.full-bleed {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
 .img-container {
   border-radius: 10px;
   overflow: hidden;
