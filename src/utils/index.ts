@@ -1,1 +1,1 @@
-export * from "./fetch-images";
+export * from "./fetchImages";
